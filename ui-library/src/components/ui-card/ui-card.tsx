@@ -1,4 +1,4 @@
-import { Component, h, Prop, getAssetPath, State } from '@stencil/core';
+import { Component, h, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'ui-card',
@@ -6,8 +6,8 @@ import { Component, h, Prop, getAssetPath, State } from '@stencil/core';
   shadow: false,
 })
 export class UiCard {
-  @Prop() imageFront = 'star.png';
-  @Prop() imageBack = 'star.png';
+  @Prop() imageFront?: string;
+  @Prop() imageBack?: string;
 
   @State() selectValue: string;
   @State() submitted: boolean = false;
@@ -19,13 +19,13 @@ export class UiCard {
   };
 
   render() {
-    const logoFront = getAssetPath(`../assets/images/${this.imageFront}`);
-    const logoBack = getAssetPath(`../assets/images/${this.imageBack}`);
+    // const logoFront = getAssetPath(`../assets/images/${this.imageFront}`);
+    // const logoBack = getAssetPath(`../assets/images/${this.imageBack}`);
 
     if (this.submitted) {
       return (
         <div class="card-container-back">
-          <img src={logoBack} alt="form submission illustration" />
+          <img src={this.imageBack} alt="form submission illustration" />
           <div class="pill">You selected out {this.selectValue} of 5</div>
           <div class="card-containter-back-content">
             <h2>Thank you!</h2>
@@ -37,7 +37,7 @@ export class UiCard {
       return (
         <div class="card-container">
           <div class="image-container">
-            <img src={logoFront} alt="star" />
+            <img src={this.imageFront} alt="star" />
           </div>
           <div class="content">
             <h3>How did we do?</h3>

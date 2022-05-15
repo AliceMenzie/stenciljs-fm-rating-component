@@ -1,14 +1,12 @@
 import "./App.css";
 import { UiCard } from "ui-library-react";
-import logo from "./assets/images/icon-star.svg";
-// import { setAssetPath } from "ui-library-react/dist/components";
-
-// setAssetPath(document.currentScript.src);
+import frontImage from "./assets/images/icon-star.svg";
+import backImage from "./assets/images/illustration-thank-you.svg";
 
 function App() {
   return (
-    <div className="App">
-      <UiCard image={logo} />
+    <div className="app">
+      <UiCard imageFront={frontImage} imageBack={backImage} />
     </div>
   );
 }

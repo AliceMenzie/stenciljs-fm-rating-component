@@ -6,28 +6,14 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
-    }
     interface UiButton {
         "appearance": string;
         "label": string;
         "type": string;
     }
     interface UiCard {
-        "imageBack": string;
-        "imageFront": string;
+        "imageBack"?: string;
+        "imageFront"?: string;
     }
     interface UiInput {
         "active": string;
@@ -36,12 +22,6 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLUiButtonElement extends Components.UiButton, HTMLStencilElement {
     }
     var HTMLUiButtonElement: {
@@ -61,27 +41,12 @@ declare global {
         new (): HTMLUiInputElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
         "ui-button": HTMLUiButtonElement;
         "ui-card": HTMLUiCardElement;
         "ui-input": HTMLUiInputElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface UiButton {
         "appearance"?: string;
         "label"?: string;
@@ -97,7 +62,6 @@ declare namespace LocalJSX {
         "value"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
         "ui-button": UiButton;
         "ui-card": UiCard;
         "ui-input": UiInput;
@@ -107,7 +71,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "ui-button": LocalJSX.UiButton & JSXBase.HTMLAttributes<HTMLUiButtonElement>;
             "ui-card": LocalJSX.UiCard & JSXBase.HTMLAttributes<HTMLUiCardElement>;
             "ui-input": LocalJSX.UiInput & JSXBase.HTMLAttributes<HTMLUiInputElement>;

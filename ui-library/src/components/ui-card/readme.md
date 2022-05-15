@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default      |
-| ------------ | ------------- | ----------- | -------- | ------------ |
-| `imageBack`  | `image-back`  |             | `string` | `'star.png'` |
-| `imageFront` | `image-front` |             | `string` | `'star.png'` |
+| Property     | Attribute     | Description | Type     | Default     |
+| ------------ | ------------- | ----------- | -------- | ----------- |
+| `imageBack`  | `image-back`  |             | `string` | `undefined` |
+| `imageFront` | `image-front` |             | `string` | `undefined` |
 
 
 ## Dependencies
