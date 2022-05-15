@@ -1,0 +1,24 @@
+{
+  "name": "stenciljs-fm-rating-component",
+  "version": "1.0.0",
+  "description": "**Root Dir**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ui-library/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliceMenzie/stenciljs-fm-rating-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliceMenzie/stenciljs-fm-rating-component/issues"
+  },
+  "homepage": "https://github.com/AliceMenzie/stenciljs-fm-rating-component",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
