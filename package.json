@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d ui-library/www"
+    "deploy": "gh-pages -d ui-library/www/AliceMenzie"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/AliceMenzie/stenciljs-fm-rating-component/issues"
   },
-  "homepage": "https://github.com/AliceMenzie/stenciljs-fm-rating-component",
+  "homepage": "https://alicemenzie.github.io/stenciljs-fm-rating-component/",
   "dependencies": {
     "gh-pages": "^4.0.0"
   }

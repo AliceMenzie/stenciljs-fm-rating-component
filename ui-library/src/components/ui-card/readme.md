@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default                        |
-| ------------ | ------------- | ----------- | -------- | ------------------------------ |
-| `imageBack`  | `image-back`  |             | `string` | `'illustration-thank-you.svg'` |
-| `imageFront` | `image-front` |             | `string` | `'icon-star.svg'`              |
+| Property     | Attribute     | Description | Type     | Default      |
+| ------------ | ------------- | ----------- | -------- | ------------ |
+| `imageBack`  | `image-back`  |             | `string` | `'star.png'` |
+| `imageFront` | `image-front` |             | `string` | `'star.png'` |
 
 
 ## Dependencies

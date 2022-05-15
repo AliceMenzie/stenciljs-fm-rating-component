@@ -3,11 +3,11 @@ import { Component, h, Prop, getAssetPath, State } from '@stencil/core';
 @Component({
   tag: 'ui-card',
   styleUrl: 'ui-card.css',
-  shadow: true,
+  shadow: false,
 })
 export class UiCard {
-  @Prop() imageFront = 'icon-star.svg';
-  @Prop() imageBack = 'illustration-thank-you.svg';
+  @Prop() imageFront = 'star.png';
+  @Prop() imageBack = 'star.png';
 
   @State() selectValue: string;
   @State() submitted: boolean = false;

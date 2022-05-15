@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Host, Prop } from '@stencil/core';
 
 @Component({
   tag: 'ui-button',
@@ -12,10 +12,12 @@ export class UiButton {
 
   render() {
     return (
-      <button type={this.type} class={`${this.appearance}`}>
-        {this.label}
-        <slot></slot>
-      </button>
+      <Host>
+        <button type={this.type} class={`${this.appearance}`}>
+          {this.label}
+          <slot></slot>
+        </button>
+      </Host>
     );
   }
 }
