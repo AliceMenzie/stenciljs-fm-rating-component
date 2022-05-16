@@ -33,5 +33,6 @@ export const config: Config = {
       // prerenderConfig: './prerender.config.ts',
       // baseUrl: 'https://github.com/AliceMenzie/stenciljs-fm-rating-component',
     },
+    { type: 'dist-hydrate-script' },
   ],
 };

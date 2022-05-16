@@ -1,0 +1,6 @@
+{
+  "name": "ui-library/hydrate",
+  "description": "UiLibrary component hydration app.",
+  "main": "index.js",
+  "types": "index.d.ts"
+}
